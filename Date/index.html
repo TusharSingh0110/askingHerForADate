@@ -74,7 +74,7 @@ body, html{
     text-shadow: 0px 3px 6px rgb(147, 77, 77);
 }
 
-#fix{
+/* #fix{
     margin-top: 30px;
         border: none;
         width: 400px;
@@ -84,8 +84,26 @@ body, html{
         background: none;
         backdrop-filter: blur(5px);
         border: 1px solid black;
-        font-weight: 550;
+        font-weight: 550; */
+/* } */
+#fix, #fix1 {
+    margin-top: 30px;
+    border: none;
+    width: 400px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 10px;
+    background: none;
+    backdrop-filter: blur(5px);
+    border: 1px solid black;
+    font-weight: 550;
+    cursor: pointer; 
 }
+
+#fix:hover, #fix1:hover {
+    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.449);
+}
+
 .container{
     width: 400px;
     height: 500px;
@@ -194,6 +212,36 @@ body, html{
             border: 1px solid black;
             font-weight: 550;
     }
+    .fix1-gif{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height: 200px;
+        
+    
+    }
+    
+    .fix1-gifimg{
+        border-radius: 10px;
+        width: 300px;
+        height: 168px;
+        background-image: url("https://media1.tenor.com/m/2VprHA868S8AAAAC/yummy-desserts-desserts-milk-mocha.gif");
+        background-size: cover; 
+    }
+
+    #fix1 {
+    margin-top: 30px;
+    border: none;
+    width: 400px; /* Match width to #fix */
+    height: 50px;
+    font-size: 30px;
+    border-radius: 10px;
+    background: none;
+    backdrop-filter: blur(5px);
+    border: 1px solid black;
+    font-weight: 550;
+}
 
     .confirmation{
         display: none;
@@ -232,7 +280,8 @@ body, html{
                 <div class="fix-gif">
                     <div class="fix-gifimg"></div>
                 </div>
-                    <button class="answer" id="fix">Chai pr charcha🥰</button>
+                <button class="answer" id="fix">Let's Connet🥰</button>
+                    <button class="answer" id="fix1">Chai pr charcha 🍵</button>
                 
             </div>
     </div>
@@ -288,8 +337,12 @@ body, html{
         document.getElementById("fix").addEventListener("click", function(){
             window.location= "https://www.instagram.com/_tushar._.01?igsh=Ymd4bzF2aGtyaGtn";
         }, false);
+        document.getElementById("fix1").addEventListener("click", function(){
+            window.location= "https://chatwithchai.onrender.com/login";
+        }, false);
     </script>
     
     
 </body>
 </html>
+
